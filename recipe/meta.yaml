@@ -37,7 +37,7 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=MetaCycle
-  license: GPL (>= 2)
+  license: GPL-2.0-or-later
   summary: There are two functions-meta2d and meta3d for detecting rhythmic signals from time-series
     datasets. For analyzing time-series datasets without individual information, 'meta2d'
     is  suggested, which could incorporates multiple methods from ARSER,  JTK_CYCLE
