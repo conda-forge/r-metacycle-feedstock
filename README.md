@@ -5,11 +5,9 @@ Home: https://CRAN.R-project.org/package=MetaCycle
 
 Package license: GPL (>= 2)
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-metacycle-feedstock/blob/master/LICENSE.txt)
 
 Summary: There are two functions-meta2d and meta3d for detecting rhythmic signals from time-series datasets. For analyzing time-series datasets without individual information, 'meta2d' is  suggested, which could incorporates multiple methods from ARSER,  JTK_CYCLE and Lomb-Scargle in the detection of interested rhythms. For  analyzing time-series datasets with individual information, 'meta3d' is  suggested, which takes use of any one of these three methods to analyze  time-series data individual by individual and gives out integrated values  based on analysis result of each individual.
-
-
 
 Current build status
 ====================
@@ -38,6 +36,7 @@ Installing `r-metacycle` from the `conda-forge` channel can be achieved by addin
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `r-metacycle` can be installed with:
@@ -108,9 +107,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
