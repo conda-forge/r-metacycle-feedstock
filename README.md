@@ -1,11 +1,11 @@
-About r-metacycle
-=================
+About r-metacycle-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-metacycle-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=MetaCycle
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-metacycle-feedstock/blob/main/LICENSE.txt)
 
 Summary: There are two functions-meta2d and meta3d for detecting rhythmic signals from time-series datasets. For analyzing time-series datasets without individual information, 'meta2d' is  suggested, which could incorporates multiple methods from ARSER,  JTK_CYCLE and Lomb-Scargle in the detection of interested rhythms. For  analyzing time-series datasets with individual information, 'meta3d' is  suggested, which takes use of any one of these three methods to analyze  time-series data individual by individual and gives out integrated values  based on analysis result of each individual.
 
