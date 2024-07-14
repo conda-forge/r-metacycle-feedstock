@@ -1,6 +1,5 @@
 {% set version = '1.2.0' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-metacycle
@@ -13,8 +12,7 @@ source:
   sha256: 1300172b57264c71d0a4fb877a7c102db2a1f01d4896dfa32c179ccfb2ae01d2
 
 build:
-  merge_build_host: True  # [win]
-  number: 4
+  number: 5
   noarch: generic
   rpaths:
     - lib/R/lib/
