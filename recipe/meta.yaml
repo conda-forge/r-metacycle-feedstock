@@ -1,4 +1,4 @@
-{% set version = '1.2.0' %}
+{% set version = "1.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/MetaCycle_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/MetaCycle/MetaCycle_{{ version }}.tar.gz
-  sha256: 1300172b57264c71d0a4fb877a7c102db2a1f01d4896dfa32c179ccfb2ae01d2
+  sha256: c50aaedf83bb6adf98844b13598a52d7356c66cc43624f96a4ed5d9169076903
 
 build:
-  number: 6
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -36,13 +36,8 @@ test:
 about:
   home: https://CRAN.R-project.org/package=MetaCycle
   license: GPL-2.0-or-later
-  summary: There are two functions-meta2d and meta3d for detecting rhythmic signals from time-series
-    datasets. For analyzing time-series datasets without individual information, 'meta2d'
-    is  suggested, which could incorporates multiple methods from ARSER,  JTK_CYCLE
-    and Lomb-Scargle in the detection of interested rhythms. For  analyzing time-series
-    datasets with individual information, 'meta3d' is  suggested, which takes use of
-    any one of these three methods to analyze  time-series data individual by individual
-    and gives out integrated values  based on analysis result of each individual.
+  summary: There are two functions-meta2d and meta3d for detecting rhythmic signals from time-series datasets. For analyzing time-series datasets without individual information, 'meta2d' is  suggested, which could incorporates multiple methods from ARSER,  JTK_CYCLE and Lomb-Scargle in the detection of interested 
+    rhythms. For  analyzing time-series datasets with individual information, 'meta3d' is  suggested, which takes use of any one of these three methods to analyze  time-series data individual by individual and gives out integrated values  based on analysis result of each individual.
   license_family: GPL3
   license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
